@@ -2,14 +2,56 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
 	<title>Bibliothekssoftware</title>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: Helvetica, sans-serif;
+			margin: auto;
+			max-width: 60em;
+			background: #eee;
+		}
+		p {
+			margin: 1em 0em;
+		}
+		h5 {
+			margin-top: 1em;
+		}
+		ul {
+			padding-left: 2em;
+		}
+		dt {
+			font-weight: bold;
+		}
+		dd {
+			margin: 0 0 3em 2em;
+		}
+	</style>
 </head>
 <body>
 	<h1>Bibliothekssoftware</h1>
+
 	<p>
 	Eine Liste von Softwarekomponenten zur Nutzung durch Bibliotheken, besonders für Websites.
 	</p>
 	
+	<!--
 	<h2>Liste</h2>
+	<div class="sidebar">
+		<h4>Tags</h4>
+		<ul>
+		
+		</ul>
+		
+		<h4>von</h4>
+		<ul>
+		
+		</ul>
+	</div>
+	-->
 	
 	<dl>
 		<dt class="tag-typo3 tag-suche by-subugoe">
@@ -17,14 +59,63 @@
 		</dt>
 		<dd>
 			<p>
-				pazpar2 ist eine Metasuchsoftware.
+				<a href="http://www.indexdata.com/pazpar2">pazpar2</a> ist eine Metasuchsoftware von <a href="http://www.indexdata.com">Index Data</a>.
 			</p>
 			<ul>
-				<li>ssp/pazpar2-SUB – Konfigurationsdateien für die pazpar2 Services der SUB Göttingen</li>
-				<li>ssp/pazar2-js-client – JavaScript client für pazpar2</li>
-				<li>ssp/typo3-pazapar2 – TYPO3 Extension zur automatischen Einbindung von pazpar2</li>
+				<li><a href="https://github.com/ssp/pazpar2-SUB">pazpar2-SUB</a> – Konfigurationsdateien für die pazpar2 Services der SUB Göttingen</li>
+				<li><a href="http://typo3.org/extensions/repository/view/pazpar2">pazar2-js-client</a> – JavaScript client für pazpar2</li>
+				<li><a href="https://github.com/ssp/typo3-pazpar2">typo3-pazapar2</a> – TYPO3 Extension zur automatischen Einbindung von pazpar2 auch <a href="http://typo3.org/extensions/repository/view/pazpar2">verfügbar im TER</a></li>
+				<li><a href="https://github.com/ssp/pazpar2-access">pazpar2-access</a> – Komponente zur Umsetzung von Zugriffsbeschränkungen
 			</ul>
+			<h5>Beispiele</h5>
+			<p class="beispiele">
+				<a href="http://aac.sub.uni-goettingen.de/">Lib AAC</a>,
+				<a href="http://geo-leo.de">GEO-LEO</a>,
+				<a href="http://www.sub.uni-goettingen.de/naturwissenschaften-mathematik-und-informatik/mathematik/neuerwerbungen/">SUB Göttingen</a> (Neuerwerbungen)
+			</p>
 		</dd>
+		
+		
+		<dt class="tag-typo3 by-subgoe">
+			xmlinclude: Darstellung von XML Daten in TYPO3
+		</dt>
+		<dd>
+			<p>
+				<a href="https://github.com/ssp/typo3-pazpar2">xmlinclude</a> – TYPO3 Extension zur Abfrage, Transformation und Anzeige von XML Daten. <a href="http://de.slideshare.net/cv47al/xmlinclude-rrzn">Folien</a>
+			</p>
+			<h5>Beispiele</h5>
+			<p class="beispiele">
+				<a href="http://vlib.sub.uni-goettingen.de/test/xmlinclude/">Demoseiten</a>
+			</p>
+		</dd>
+		
+		
+		<dt class="tag-daten by-subgoe">
+			Script zum Laden von Daten aus SRU Schnittstellen
+		</dt>
+		<dd>
+			<p>
+				<a href="https://github.com/ssp/sru-loader">sru-loader</a>
+			</p>
+			<h5>Beispiel</h5>
+			<code class="beispiele">sru-loader.py --url http://sru.gbv.de/gvk --schema picaxml --format xml-batch --format couchdb-batch 'xpr "zdb 1 ecc"'</code>
+		</dd>
+
+
+		<dt class="tag-typo3 tag-ezb by-subgoe">
+			Anzeige von EZB Daten in TYPO3
+		</dt>
+		<dd>
+			<p>
+				<a href="https://github.com/ssp/typo3-ezbrequest">ezbrequest</a> – Anzeige von EZB Ergebnislisten in TYPO3
+			</p>
+			<h5>Beispiel</h5>
+			<p class="beispiele">
+				<a href="http://vifamath.de/zeitschriftenliste/">Zeitschriftenliste in vifamath</a>,
+				<a href="http://aac.sub.uni-goettingen.de/nationallizenzen/geschichte/">Nationallizenzen Geschichte in Lib AAC</a>
+			</p>
+		</dd>
+
 	
 	</dl>
 	
